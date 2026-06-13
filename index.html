@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fire Water Grass Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+
+    <h1>🔥💧🌿 Fire Water Grass</h1>
+
+    <p id="turn">Press Start to begin!</p>
+
+    <div class="controls">
+      <button id="startBtn" onclick="startGame()">▶ Start Game</button>
+      <button id="restartBtn" onclick="restartGame()">🔄 Restart</button>
+    </div>
+
+    <div class="choices">
+      <button onclick="playGame('Fire')" class="choice-btn" disabled>
+        🔥 Fire
+      </button>
+
+      <button onclick="playGame('Water')" class="choice-btn" disabled>
+        💧 Water
+      </button>
+
+      <button onclick="playGame('Grass')" class="choice-btn" disabled>
+        🌿 Grass
+      </button>
+    </div>
+
+    <div class="result-box">
+      <p id="playerChoice">Player Choice: -</p>
+      <p id="computerChoice">Computer Choice: -</p>
+      <h2 id="result">Result: -</h2>
+    </div>
+
+    <div class="score-box">
+      <h3>🏆 Score (First to 5 Wins)</h3>
+      <p id="playerScore">Player: 0</p>
+      <p id="computerScore">Computer: 0</p>
+    </div>
+
+    <div id="gameMessage" class="game-message"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

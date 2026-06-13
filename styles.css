@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.game-container {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#turn {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+#startBtn {
+  background: #28a745;
+}
+
+#restartBtn {
+  background: #007bff;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.choice-btn {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #ff5e62;
+  color: white;
+  transition: 0.3s;
+}
+
+.choice-btn:hover:not(:disabled) {
+  transform: scale(1.08);
+  background: #e0484d;
+}
+
+.choice-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.result-box {
+  margin-top: 25px;
+}
+
+.result-box p,
+.result-box h2 {
+  margin: 10px 0;
+}
+
+.score-box {
+  margin-top: 25px;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.score-box p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.game-message {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.win {
+  color: green;
+}
+
+.lose {
+  color: red;
+}
+
+@media (max-width: 480px) {
+  .game-container {
+    padding: 20px;
+  }
+
+  .choice-btn {
+    width: 100%;
+  }
+
+  .controls button {
+    width: 100%;
+  }
+}
